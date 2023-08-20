@@ -1,0 +1,57 @@
+[
+  {
+    "service": "s1",
+    "cluster": "cluster1",
+    "tenant": "",
+    "mode": 0,
+    "url": "",
+    "query": {},
+    "backend": [
+      {
+        "name": "s1-cluster1-a",
+        "addr": "http://localhost:10801",
+        "weight": 10
+      },
+      {
+        "name": "s1-cluster1-b",
+        "addr": "http://localhost:10802",
+        "weight": 10
+      },
+      {
+        "name": "s1-cluster1-c",
+        "addr": "http://localhost:10803",
+        "weight": 10
+      }
+    ]
+  },
+  {
+    "service": "s2",
+    "mode": 2,
+    "backend": [
+      {
+        "name": "s2-a",
+        "addr": "http://localhost:10841"
+      },
+      {
+        "name": "s2-b",
+        "addr": "http://localhost:10840"
+      },
+      {
+        "name": "s2-c",
+        "addr": "http://localhost:10805"
+      },
+      {
+        "name": "s2-d",
+        "addr": "http://localhost:10804"
+      }
+    ]
+  },
+  {
+    "backend": [
+      {
+        "name": "default",
+        "addr": "http://localhost:10800"
+      }
+    ]
+  }
+]
